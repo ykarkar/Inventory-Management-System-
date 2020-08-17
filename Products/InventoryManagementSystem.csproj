@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B910387-C20F-4924-B599-7DA27FBF2C7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Products</RootNamespace>
+    <AssemblyName>Products</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DisplayAllOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayAllOrders.Designer.cs">
+      <DependentUpon>DisplayAllOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayAllUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayAllUsers.Designer.cs">
+      <DependentUpon>DisplayAllUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayAllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayAllProducts.Designer.cs">
+      <DependentUpon>DisplayAllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing.Designer.cs">
+      <DependentUpon>Purchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DisplayAllOrders.resx">
+      <DependentUpon>DisplayAllOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayAllProducts.resx">
+      <DependentUpon>DisplayAllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayAllUsers.resx">
+      <DependentUpon>DisplayAllUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchasing.resx">
+      <DependentUpon>Purchasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".Designer.DisplayAllUserscs" />
+    <None Include=".DisplayAllUserscs">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sales-performance-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sales-performance-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-background-images-technology-8_1449x821_1087x6681.jpg" />
+    <None Include="Resources\50-Beautiful-and-Minimalist-Presentation-Backgrounds-01_1087x668.jpg" />
+    <None Include="Resources\50-Beautiful-and-Minimalist-Presentation-Backgrounds-01_1087x6681.jpg" />
+    <None Include="Resources\box-512_122x122.png" />
+    <None Include="Resources\box-512_122x1221.png" />
+    <None Include="Resources\box-512_122x1222.png" />
+    <None Include="Resources\box-512_122x1223.png" />
+    <None Include="Resources\box-512.png" />
+    <Content Include="Resources\log3.jpg" />
+    <None Include="Resources\noun_product_1632832.png" />
+    <None Include="Resources\logout_btn_150x50.png" />
+    <Content Include="Resources\sale5.jpg" />
+    <None Include="Resources\sales-performance_120x120.png" />
+    <None Include="Resources\select-users1.png" />
+    <None Include="Resources\shop-two.png" />
+    <Content Include="Resources\user2.jpg" />
+    <None Include="Resources\website-background-images-technology-8_1449x821_1087x668.jpg" />
+    <None Include="Resources\website-background-images-technology-8_1449x821.jpg" />
+    <None Include="Resources\100670993-a-student-s-desk-on-a-school-board-a-dark-wooden-background-made-of-boards-concept-of-education-and-.jpg" />
+    <None Include="Resources\50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg" />
+    <Content Include="Resources\admin.jpg" />
+    <None Include="Resources\website-background-images-technology-8.jpg" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\back1.png" />
+    <None Include="Resources\background-blank-book-bindings-preview.jpg" />
+    <None Include="Resources\adult_blur_chocolate_computer_desk_employee_female_598879_1449x821.jpg" />
+    <None Include="Resources\adult_blur_chocolate_computer_desk_employee_female_598879_1449x8211.jpg" />
+    <Content Include="Resources\blue.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\images2.jpg" />
+    <None Include="Resources\images3.jpg" />
+    <None Include="Resources\images4.jpg" />
+    <None Include="Resources\images_162x149.jpg" />
+    <Content Include="Resources\product.jpg" />
+    <Content Include="Resources\product2.jpg" />
+    <Content Include="Resources\sale.jpg" />
+    <Content Include="Resources\user.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
